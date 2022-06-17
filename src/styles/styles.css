@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 100vw;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    padding-bottom: 4rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid rgb(244, 244, 244);
+}
+.logo{
+    margin-left: 2rem;
+    width: 1rem;
+}
+.navbar-links {
+    list-style: none;
+    margin: 0;
+}
+.navbar-box {
+    float: left;
+}
+.navbar-image {
+    width: 1.2rem;
+    padding: 1.5rem 2rem;
+    border-left: 1.5px solid rgb(244, 244, 244);
+}
+
+/* Search info */
+.search-info {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.items-found {
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+.search-target {
+    margin: 0.7rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 18rem;
+    color: #565656;
+}
+
+/* Selectors */
+.selects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid rgb(244, 244, 244);
+    border-bottom: 1.5px solid rgb(244, 244, 244);
+    padding: 0.3rem 0;
+    margin-top: 1rem;
+}
+
+.products {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.order {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-left: 1.5px solid rgb(244, 244, 244);
+}
+.order > p {
+    color: rgb(158, 158, 158);
+}
+
+/* Products */
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.product-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 40%;
+}
+.product-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product-image > img {
+    max-width: 10rem;
+}
+.white-container-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.3rem;
+    background-color: white;
+    border-radius: 55%;
+}
+.product-name {
+    font-weight: 400;
+    text-align: center;
+    margin: 0.5rem;
+}
+.product-price {
+    margin: 0.5rem;
+    color: rgb(158, 158, 158);
+}
