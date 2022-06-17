@@ -128,3 +128,33 @@ body {
     margin: 0.5rem;
     color: rgb(158, 158, 158);
 }
+
+/* Pages */
+
+.pages {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid rgb(244, 244, 244);
+    border-bottom: 1.5px solid rgb(244, 244, 244);
+    margin-top: 2rem;
+}
+.pages-list {
+    list-style: none;
+}
+.number {
+    float: left;
+    margin: 0.75rem;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    color: #ababab;
+}
+.marked {
+    color: black;
+}
+.number > img {
+    width: 1rem;
+}
+
