@@ -94,6 +94,11 @@ body {
     gap: 2rem;
     margin-top: 1rem;
 }
+@media (max-width: 325px) {
+    .products-list{
+        flex-direction: column;
+    }
+}
 .product-item {
     display: flex;
     justify-content: center;
@@ -111,6 +116,11 @@ body {
 .product-image > img {
     max-width: 10rem;
 }
+@media (min-width: 525px) {
+    .product-image > img {
+        max-width: 15rem;
+    }
+}
 .white-container-heart {
     position: absolute;
     top: 10px;
@@ -123,6 +133,7 @@ body {
     font-weight: 400;
     text-align: center;
     margin: 0.5rem;
+
 }
 .product-price {
     margin: 0.5rem;
