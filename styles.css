@@ -71,17 +71,76 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown {
+    position: absolute;
+    top: 3rem;
+    z-index: 10;
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.5px solid rgb(227, 227, 227);
+    border-top: none;
+    border-radius: 5px;
+}
+@media (max-width: 460px) {
+    .dropdown {
+        width: 10rem;
+        margin-left: 2rem;
+        padding: 0.5rem;
+        right: 0;
+    }
+}
+.dropdown-item {
+    font-size: 0.8rem;
+    min-width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown-item:hover {
+    background-color: #e2e2e2;
 }
 .order {
+    position: relative;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     border-left: 1.5px solid rgb(244, 244, 244);
+    cursor: pointer;
 }
 .order > p {
     color: rgb(158, 158, 158);
+}
+
+.dropdown-order {
+    position: absolute;
+    top: 3rem;
+    z-index: 10;
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.5px solid rgb(227, 227, 227);
+    border-top: none;
+    border-radius: 5px;
+}
+@media (max-width: 460px) {
+    .dropdown-order {
+        width: 10rem;
+        margin-left: 2rem;
+        padding: 0.5rem;
+        right: 0;
+    }
 }
 
 /* Products */
@@ -169,3 +228,10 @@ body {
     width: 1rem;
 }
 
+/* Fake selectos */
+.hide {
+    display: none;
+}
+.open {
+    display: inline;
+}
